@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 from rapidfuzz import process, fuzz
 import requests
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 print('Done')
 

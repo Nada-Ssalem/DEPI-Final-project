@@ -4,3 +4,9 @@ numpy
 scikit-learn
 rapidfuzz
 requests
+matplotlib
+seaborn
+re
+collections
+pathlib
+networkx
