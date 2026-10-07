@@ -1,0 +1,78 @@
+﻿column_name,data_type,meaning,origin
+id,int64,Source product identifier,original
+name,object,Original English/mixed product name,original
+arabic,object,Original Arabic product name,original
+active,object,Original active ingredient field,original
+company,object,Original company/manufacturer field,original
+price,object,Original current price,original
+oldprice,object,Original old price,original
+availability,float64,Original availability/inventory value,original
+barcode,object,Original barcode identifier,original
+slug,object,Original source slug,original
+units,int64,Original units field,original
+description,object,Original description/category,original
+uses,object,Original Arabic uses/indications text,original
+matched_fda_ingredients,object,Original matched FDA ingredients,original
+uses_summary,object,Original Arabic uses summary,original
+uses_summary_en,object,Original English uses summary,original
+warning_high_blood_pressure,int64,Original warning flag,original
+warning_diabetes,int64,Original warning flag,original
+warning_pregnancy,int64,Original warning flag,original
+warning_lactation,int64,Original warning flag,original
+warning_kidney,int64,Original warning flag,original
+warning_liver,int64,Original warning flag,original
+warning_heart,int64,Original warning flag,original
+warnings_summary,object,Original Arabic warnings summary,original
+warnings_summary_en,object,Original English warnings summary,original
+name_clean,object,Normalized product name,engineered/cleaned
+arabic_clean,object,Normalized Arabic product name,engineered/cleaned
+active_clean,object,Normalized active ingredient text,engineered/cleaned
+company_clean,object,Normalized company/manufacturer text,engineered/cleaned
+slug_clean,object,Normalized source slug,engineered/cleaned
+matched_fda_ingredients_clean,object,Normalized matched FDA ingredients,engineered/cleaned
+description_clean,object,Normalized description text,engineered/cleaned
+price_clean,float64,Safely parsed current price,engineered/cleaned
+oldprice_clean,float64,Safely parsed old price,engineered/cleaned
+availability_clean,Int64,Safely parsed non-negative availability,engineered/cleaned
+barcode_clean,object,Cleaned barcode string preserving leading zeros,engineered/cleaned
+units_clean,Int64,Safely parsed units integer,engineered/cleaned
+active_canonical,object,Order-independent canonical active ingredient representation,engineered/cleaned
+dosage_form,object,Canonical dosage form,engineered/cleaned
+route,object,Explicitly inferable route of administration,engineered/cleaned
+release_type,object,Canonical release characteristic,engineered/cleaned
+strength_value,float64,First numeric strength value for single-strength products,engineered/cleaned
+strength_unit,object,Strength unit,engineered/cleaned
+concentration_value,float64,Concentration numerator value,engineered/cleaned
+concentration_unit,object,Concentration numerator unit,engineered/cleaned
+concentration_denominator_value,float64,Concentration denominator numeric value,engineered/cleaned
+volume_value,float64,Package/product volume value,engineered/cleaned
+volume_unit,object,Volume unit,engineered/cleaned
+pack_size,float64,Number of dosage units in package when reliably detected,engineered/cleaned
+price_invalid_flag,bool,Non-null current price could not be parsed,engineered/cleaned
+oldprice_invalid_flag,bool,Non-null old price could not be parsed,engineered/cleaned
+negative_price_flag,bool,Parsed current price is negative,engineered/cleaned
+negative_oldprice_flag,bool,Parsed old price is negative,engineered/cleaned
+availability_invalid_flag,bool,Non-null availability could not be parsed,engineered/cleaned
+negative_availability_flag,boolean,Source availability is negative,engineered/cleaned
+barcode_format_flag,boolean,Engineered feature,engineered/cleaned
+barcode_duplicate_flag,bool,Barcode appears on multiple rows,engineered/cleaned
+missing_name_flag,boolean,Product name missing/blank,engineered/cleaned
+missing_active_flag,boolean,Active ingredient missing/blank,engineered/cleaned
+zero_or_negative_units_flag,boolean,Units are zero or negative,engineered/cleaned
+oldprice_less_than_current_flag,bool,Old price is lower than current price,engineered/cleaned
+strength_parse_flag,bool,Name contains digits but no dose/concentration was extracted,engineered/cleaned
+product_match_key,object,Strict price-comparison/product identity key,engineered/cleaned
+product_key_duplicate_flag,bool,Rows sharing strict product key,engineered/cleaned
+name_active_key,object,Engineered feature,engineered/cleaned
+possible_duplicate_flag,bool,Rows sharing normalized name+active key,engineered/cleaned
+price_zero_flag,bool,Current price equals zero,engineered/cleaned
+oldprice_zero_flag,bool,Old price equals zero,engineered/cleaned
+product_family_key,object,Broader candidate-equivalence key,engineered/cleaned
+match_key_quality,object,Whether strict key has sufficient information,engineered/cleaned
+family_duplicate_flag,bool,Rows sharing broader family key,engineered/cleaned
+suspicious_record_flag,boolean,Any data-quality or statistical review flag,engineered/cleaned
+strength_values,object,Canonical composite strength values when multiple strengths are present,engineered/cleaned
+price_statistical_outlier_flag,bool,Current price is IQR 3× statistical outlier; review only,engineered/cleaned
+oldprice_statistical_outlier_flag,bool,Old price is IQR 3× statistical outlier; review only,engineered/cleaned
+availability_statistical_outlier_flag,boolean,Availability is IQR 3× statistical outlier; review only,engineered/cleaned
+critical_review_flag,boolean,Any critical operational/data-integrity flag,engineered/cleaned
