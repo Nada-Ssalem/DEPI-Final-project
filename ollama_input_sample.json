@@ -1,0 +1,10 @@
+{
+  "drug_1": "trioxsalen",
+  "drug_2": "verteporfin",
+  "interaction": "Trioxsalen may increase the photosensitizing activities of Verteporfin.",
+  "structured_features": {
+    "effect_direction": "increase",
+    "interaction_mechanism": "activity",
+    "interaction_category": "photosensitizing"
+  }
+}
