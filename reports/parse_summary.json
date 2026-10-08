@@ -1,0 +1,30 @@
+{
+  "rows": 191541,
+  "parse_rate": 0.99474,
+  "unparsed_rows": 1008,
+  "by_mechanism": {
+    "adverse_risk": 61397,
+    "pharmacodynamic": 45339,
+    "metabolism": 39313,
+    "serum_concentration": 34019,
+    "efficacy": 8024,
+    "excretion": 1856,
+    "unparsed": 1008,
+    "bioavailability": 529,
+    "absorption": 45,
+    "protein_binding": 11
+  },
+  "by_class": {
+    "adverse_risk_up": 61397,
+    "exposure_up": 60441,
+    "pd_potentiation": 38823,
+    "exposure_down": 15321,
+    "efficacy_loss": 7780,
+    "pd_reduction": 6516,
+    "unparsed": 1008,
+    "efficacy_gain": 244,
+    "other": 11
+  },
+  "n_pairs_unordered": 191135,
+  "n_ingredients": 1701
+}
