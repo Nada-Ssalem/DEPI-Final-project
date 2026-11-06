@@ -2,6 +2,11 @@ pandas
 numpy
 matplotlib
 seaborn
-scikit-learn
-kaggle
-
+kagglehub
+jupyter
+ipykernel
+rapidfuzz
+pyarrow
+streamlit
+ollama
+pytest
