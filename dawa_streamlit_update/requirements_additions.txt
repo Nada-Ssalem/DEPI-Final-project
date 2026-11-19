@@ -1,0 +1,8 @@
+# add these lines to requirements.txt
+streamlit>=1.40
+ddgs
+rapidfuzz
+pyarrow
+pandas
+ollama
+pytest
