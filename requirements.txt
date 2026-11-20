@@ -1,0 +1,14 @@
+pandas
+numpy
+matplotlib
+seaborn
+kagglehub
+jupyter
+ipykernel
+rapidfuzz
+pyarrow
+streamlit
+ollama
+pytest
+google-genai
+python-dotenv
